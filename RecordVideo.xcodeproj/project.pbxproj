@@ -13,6 +13,10 @@
 		4BC9B0CC1CEF08AD007FFEA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BC9B0CA1CEF08AD007FFEA6 /* Main.storyboard */; };
 		4BC9B0CE1CEF08AD007FFEA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BC9B0CD1CEF08AD007FFEA6 /* Assets.xcassets */; };
 		4BC9B0D11CEF08AD007FFEA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BC9B0CF1CEF08AD007FFEA6 /* LaunchScreen.storyboard */; };
+		4BC9B0DD1CEF0919007FFEA6 /* FCPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BC9B0DA1CEF0919007FFEA6 /* FCPlayerManager.m */; };
+		4BC9B0DE1CEF0919007FFEA6 /* FCRecordManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BC9B0DC1CEF0919007FFEA6 /* FCRecordManager.m */; };
+		4BC9B0E41CEF0FB3007FFEA6 /* FCMovieFileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BC9B0E21CEF0FB3007FFEA6 /* FCMovieFileViewController.m */; };
+		4BC9B0E51CEF0FB3007FFEA6 /* FCMovieFileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BC9B0E31CEF0FB3007FFEA6 /* FCMovieFileViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,14 @@
 		4BC9B0CD1CEF08AD007FFEA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4BC9B0D01CEF08AD007FFEA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4BC9B0D21CEF08AD007FFEA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BC9B0D91CEF0919007FFEA6 /* FCPlayerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCPlayerManager.h; sourceTree = "<group>"; };
+		4BC9B0DA1CEF0919007FFEA6 /* FCPlayerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCPlayerManager.m; sourceTree = "<group>"; };
+		4BC9B0DB1CEF0919007FFEA6 /* FCRecordManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCRecordManager.h; sourceTree = "<group>"; };
+		4BC9B0DC1CEF0919007FFEA6 /* FCRecordManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCRecordManager.m; sourceTree = "<group>"; };
+		4BC9B0E11CEF0FB3007FFEA6 /* FCMovieFileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCMovieFileViewController.h; sourceTree = "<group>"; };
+		4BC9B0E21CEF0FB3007FFEA6 /* FCMovieFileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCMovieFileViewController.m; sourceTree = "<group>"; };
+		4BC9B0E31CEF0FB3007FFEA6 /* FCMovieFileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FCMovieFileViewController.xib; sourceTree = "<group>"; };
+		4BC9B0E71CF2A86E007FFEA6 /* RecordVideo_precompile.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecordVideo_precompile.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +54,11 @@
 		4BC9B0B51CEF08AD007FFEA6 = {
 			isa = PBXGroup;
 			children = (
+				4BC9B0E71CF2A86E007FFEA6 /* RecordVideo_precompile.pch */,
+				4BC9B0E11CEF0FB3007FFEA6 /* FCMovieFileViewController.h */,
+				4BC9B0E21CEF0FB3007FFEA6 /* FCMovieFileViewController.m */,
+				4BC9B0E31CEF0FB3007FFEA6 /* FCMovieFileViewController.xib */,
+				4BC9B0D81CEF0919007FFEA6 /* Core */,
 				4BC9B0C01CEF08AD007FFEA6 /* RecordVideo */,
 				4BC9B0BF1CEF08AD007FFEA6 /* Products */,
 			);
@@ -77,6 +94,17 @@
 				4BC9B0C21CEF08AD007FFEA6 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4BC9B0D81CEF0919007FFEA6 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				4BC9B0D91CEF0919007FFEA6 /* FCPlayerManager.h */,
+				4BC9B0DA1CEF0919007FFEA6 /* FCPlayerManager.m */,
+				4BC9B0DB1CEF0919007FFEA6 /* FCRecordManager.h */,
+				4BC9B0DC1CEF0919007FFEA6 /* FCRecordManager.m */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +166,7 @@
 			files = (
 				4BC9B0D11CEF08AD007FFEA6 /* LaunchScreen.storyboard in Resources */,
 				4BC9B0CE1CEF08AD007FFEA6 /* Assets.xcassets in Resources */,
+				4BC9B0E51CEF0FB3007FFEA6 /* FCMovieFileViewController.xib in Resources */,
 				4BC9B0CC1CEF08AD007FFEA6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,8 +179,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BC9B0C91CEF08AD007FFEA6 /* ViewController.m in Sources */,
+				4BC9B0DD1CEF0919007FFEA6 /* FCPlayerManager.m in Sources */,
+				4BC9B0E41CEF0FB3007FFEA6 /* FCMovieFileViewController.m in Sources */,
 				4BC9B0C61CEF08AD007FFEA6 /* AppDelegate.m in Sources */,
 				4BC9B0C31CEF08AD007FFEA6 /* main.m in Sources */,
+				4BC9B0DE1CEF0919007FFEA6 /* FCRecordManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +295,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/RecordVideo_precompile.pch";
 				INFOPLIST_FILE = RecordVideo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = feizhu.RecordVideo;
@@ -274,6 +307,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/RecordVideo_precompile.pch";
 				INFOPLIST_FILE = RecordVideo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = feizhu.RecordVideo;
@@ -300,6 +334,7 @@
 				4BC9B0D71CEF08AD007FFEA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

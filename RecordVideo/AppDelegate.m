@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "FCMovieFileViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+     FCMovieFileViewController *movieFileOutputViewController = [[FCMovieFileViewController alloc] init];
+    
+    UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:movieFileOutputViewController];
+    self.window.rootViewController = navi;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
